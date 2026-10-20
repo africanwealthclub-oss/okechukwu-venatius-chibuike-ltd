@@ -34,7 +34,7 @@ button { color: inherit; }
 
 .site-header { position: sticky; top: 0; z-index: 50; height: var(--header-height); background: var(--white); border-bottom: 1px solid #e7eaf0; }
 .header-inner { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 26px; }
-.logo-link { width: 242px; height: 72px; display: inline-flex; align-items: center; flex: 0 0 auto; }
+.logo-link { width: 190px; height: 56px; display: inline-flex; align-items: center; flex: 0 0 auto; }
 .brand-logo { width: 100%; height: auto; object-fit: contain; }
 .primary-navigation { display: flex; align-items: center; gap: clamp(18px, 2.5vw, 34px); }
 .nav-link { position: relative; padding: 10px 0; color: var(--navy); font-size: 13px; font-weight: 650; letter-spacing: .01em; transition: color .18s ease; }
@@ -204,7 +204,7 @@ button { color: inherit; }
 .footer-topline { height: 4px; background: linear-gradient(90deg, var(--gold) 0 22%, #223655 22% 100%); }
 .footer-main { display: grid; grid-template-columns: 1.3fr .72fr 1fr 1.05fr; gap: clamp(28px, 4vw, 58px); padding-top: 52px; padding-bottom: 42px; }
 .footer-brand-column { max-width: 340px; }
-.footer-logo-link { width: 220px; max-width: 100%; height: 76px; display: flex; align-items: center; margin: -8px 0 10px; padding: 5px 10px; background: var(--white); }
+.footer-logo-link { width: 160px; max-width: 100%; height: 58px; display: flex; align-items: center; margin: -2px 0 10px; }
 .footer-logo { width: 100%; height: 100%; object-fit: contain; }
 .site-footer p, .site-footer li { color: #d2dae6; font-size: 12px; line-height: 1.8; }
 .footer-brand-column > p { max-width: 330px; margin: 12px 0; }
@@ -233,7 +233,7 @@ button { color: inherit; }
 .page-not-found { min-height: 60vh; display: grid; place-content: center; padding: 70px 24px; text-align: center; }
 @media (max-width: 960px) {
   :root { --header-height: 78px; }
-  .logo-link { width: 205px; height: 62px; }
+  .logo-link { width: 170px; height: 50px; }
   .header-quote { display: none; }
   .hero-grid { gap: 32px; }
   .trust-item { padding-inline: 12px; }
@@ -243,6 +243,7 @@ button { color: inherit; }
 }
 @media (max-width: 700px) {
   .shell { width: min(var(--shell), calc(100% - 36px)); }
+  .logo-link { width: 150px; height: 44px; }
   .menu-toggle { display: inline-flex; }
   .primary-navigation { position: absolute; top: var(--header-height); left: 0; right: 0; display: none; flex-direction: column; align-items: stretch; gap: 0; padding: 10px 18px 18px; background: var(--white); border-bottom: 1px solid var(--line); }
   .primary-navigation[data-open="true"] { display: flex; }
